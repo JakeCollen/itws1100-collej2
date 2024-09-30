@@ -1,0 +1,36 @@
+.header {
+    color: white;
+    background-color: #8AAAE5;
+    font-size: 3em;
+    text-align: center;
+}
+
+.labs li {
+    color: black;
+    font-size: 1.1em;
+    list-style-type: square;
+    margin: 10px 0 10px 0;
+}
+
+.header li {
+    list-style-type: none;
+    padding: 5px 5px 5px 5px;
+    font-size: .5em;
+}
+
+h4 {
+    font-size: 1.4em;
+    text-align: center;
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+p {
+    text-align: left;
+}
+
+body {
+    background-color: #FCF6F5;
+}
