@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+    <title>Projects Home Page</title>
+    <link>http://collej2rpi.eastus.cloudapp.azure.com/iit/projects/projects.html</link>
+    <description>Contains links to all labs</description>
+    <pubDate>Thu, 26 Sep 2024 18:00:00 EST</pubDate>
+    <item>
+        <title>Lab 1</title>
+        <link>http://collej2rpi.eastus.cloudapp.azure.com/iit/projects/labs/lab01/lab01.html</link>
+        <description>All about lab 1 Azure and GitHub</description>
+        <pubDate>Thu, 26 Sep 2024 19:00:00 EST</pubDate>
+        <guid>http://collej2rpi.eastus.cloudapp.azure.com/iit/projects/labs/lab01/lab01.html</guid>
+    </item>
+    <item>
+        <title>Lab 2</title>
+        <link>http://collej2rpi.eastus.cloudapp.azure.com/iit/projects/labs/lab02/lab02.html</link>
+        <description>All about lab 2 building a resume</description>
+        <pubDate>Thu, 26 Sep 2024 19:30:00 EST</pubDate>
+        <guid>http://collej2rpi.eastus.cloudapp.azure.com/iit/projects/labs/lab02/lab02.html</guid>
+    </item>
+    <item>
+        <title>Lab 3</title>
+        <link>http://collej2rpi.eastus.cloudapp.azure.com/iit/projects/labs/lab03/lab03.html</link>
+        <description>All about lab 3 creating a personal website</description>
+        <pubDate>Thu, 26 Sep 2024 20:00:00 EST</pubDate>
+        <guid>http://collej2rpi.eastus.cloudapp.azure.com/iit/projects/labs/lab03/lab03.html</guid>
+    </item>
+    <item>
+        <title>Lab 4</title>
+        <link>http://collej2rpi.eastus.cloudapp.azure.com/iit/projects/labs/lab04/lab04.html</link>
+        <description>All about lab 4 making an RSS feed</description>
+        <pubDate>Mon, 30 Sep 2024 20:30:00 EST</pubDate>
+        <guid>http://collej2rpi.eastus.cloudapp.azure.com/iit/projects/labs/lab04/lab04.html</guid>
+    </item>
+</channel>
+</rss>
+
+
+

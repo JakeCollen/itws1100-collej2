@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    <title>Projects Home Page</title>
+    <atom:link href="../../../projects.html" rel="self"/>
+    <updated>2024-09-26T22:00:00+00:00</updated>
+    <author>
+        <name>Jake Collen</name>
+    </author>
+    <id>tag:collej2rpi.eastus.cloudapp.azure.com,2024-09-26:/projects/projects.html</id>
+
+    <entry>
+        <title>Lab 1</title>
+        <link href="../../lab01/lab01.html"/>
+        <id>tag:collej2rpi.eastus.cloudapp.azure.com,2024-09-26:/projects/projects/labs/lab01/lab01.html</id>
+        <updated>2024-09-26T23:00:00+00:00</updated>
+        <summary>All about lab 1 Azure and GitHub</summary>
+    </entry>
+    <entry>
+        <title>Lab 2</title>
+        <link href="../../lab02/lab02.html"/>
+        <id>tag:collej2rpi.eastus.cloudapp.azure.com,2024-09-26:/projects/projects.html</id>
+        <updated>2024-09-26T23:30:00+00:00</updated>
+        <summary>All about lab 2 building a resume</summary>
+    </entry>
+    <entry>
+        <title>Lab 3</title>
+        <link href="../../lab03/lab03.html"/>
+        <id>tag:collej2rpi.eastus.cloudapp.azure.com,2024-09-26:/projects/projects.html</id>
+        <updated>2024-09-27T00:00:00+00:00</updated>
+        <summary>All about lab 3 creating a personal website</summary>
+    </entry>
+    <entry>
+        <title>Lab 4</title>
+        <link href="../../lab04/lab04.html"/>
+        <id>tag:collej2rpi.eastus.cloudapp.azure.com,2024-09-30/projects/projects.html</id>
+        <updated>2024-09-30T00:30:00+00:00</updated>
+        <summary>All about lab 4 making an RSS feed</summary>
+    </entry>
+</feed>
+        
+    
