@@ -1,0 +1,44 @@
+{
+    "labListItem": [
+       {
+          "number": "Lab 1",
+          "title": "GitHub and Azure",
+          "page": "labs/lab01/lab01.html"
+       },
+       {
+          "number": "Lab 2",
+          "title": "Building a Resume",
+          "page": "labs/lab02/lab02.html"
+       },
+       {
+          "number": "Lab 3",
+          "title": "Personal Website",
+          "page": "labs/lab03/lab03.html"
+       },
+       {
+          "number": "Lab 4",
+          "title": "XML and RSS",
+          "page": "labs/lab04/lab04.html"
+       },
+       {
+          "number": "Lab 5",
+          "title": "JavaScript",
+          "page": "labs/lab05/lab05.html"
+       },
+       {
+          "number": "Lab 6",
+          "title": "JQuery",
+          "page": "labs/lab06/lab06.html"
+       },
+       {
+          "number": "Lab 7",
+          "title": "Group Project Mockup",
+          "page": "labs/lab07/lab07.html"
+       },
+       {
+          "number": "Lab 8",
+          "title": "Dynamic Website",
+          "page": "labs/lab08/lab08.html"
+       }
+    ]
+ }
