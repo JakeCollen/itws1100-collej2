@@ -1,4 +1,4 @@
 <?php
-header("iit/index.html")
+header("Location: http://collej2rpi.eastus.cloudapp.azure.com/iit/")
 exit;
 ?>
