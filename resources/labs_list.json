@@ -39,6 +39,16 @@
           "number": "Lab 8",
           "title": "Dynamic Website",
           "page": "labs/lab08/lab08.html"
-       }
+       },
+       {
+         "number": "Lab 9",
+         "title": "PHP and MySql",
+         "page": "labs/lab09/lab09.html"
+      },
+      {
+         "number": "Lab 10",
+         "title": "Moving to Production",
+         "page": "labs/lab10/lab10.html"
+      }
     ]
  }
