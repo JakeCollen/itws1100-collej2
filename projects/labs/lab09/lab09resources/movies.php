@@ -10,12 +10,6 @@
       
 <?php include('includes/menubody.inc.php'); ?>
 
-<p>Build the movie forms and output here.</p>
-
-<?php include('includes/foot.inc.php'); 
-  // footer info and closing tags
-?>
-
 <?php
 // We'll need a database connection both for retrieving records and for
 // inserting them.  Let's get it up front and use it for both processes
