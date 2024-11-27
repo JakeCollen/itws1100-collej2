@@ -124,7 +124,7 @@ if ($havePost) {
       $result = $db->query($query);
       $numRecords = $result->num_rows;
 
-      echo '<tr><th>title:</th><th>Year:</th><th></th></tr>';
+      echo '<tr><th>Title:</th><th>Year:</th><th></th></tr>';
       for ($i = 0; $i < $numRecords; $i++) {
          $record = $result->fetch_assoc();
          if ($i % 2 == 0) {
@@ -132,8 +132,8 @@ if ($havePost) {
          } else {
             echo "\n" . '<tr class="odd" id="movie-' . $record['movieid'] . '"><td>';
          }
-         echo htmlspecialchars($record['year']) . ', ';
          echo htmlspecialchars($record['title']);
+         echo htmlspecialchars($record['year']);
          echo '</td><td>';
          echo '</td><td>';
          echo '<img src="resources/delete.png" class="deleteMovie" width="16" height="16" alt="delete movie"/>';
