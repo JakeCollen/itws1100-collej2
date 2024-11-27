@@ -133,8 +133,8 @@ if ($havePost) {
             echo "\n" . '<tr class="odd" id="movie-' . $record['movieid'] . '"><td>';
          }
          echo htmlspecialchars($record['title']);
-         echo htmlspecialchars($record['year']);
          echo '</td><td>';
+         echo htmlspecialchars($record['year']);
          echo '</td><td>';
          echo '<img src="resources/delete.png" class="deleteMovie" width="16" height="16" alt="delete movie"/>';
          echo '</td></tr>';
