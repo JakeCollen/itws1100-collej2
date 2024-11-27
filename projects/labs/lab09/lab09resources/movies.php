@@ -110,7 +110,7 @@ if ($havePost) {
 </form>
 
 <h3>Movies</h3>
-<table id="movieTable">
+<table id="#movieTable">
    <?php
    if ($dbOk) {
 
