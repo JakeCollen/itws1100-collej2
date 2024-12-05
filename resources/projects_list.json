@@ -1,0 +1,14 @@
+{
+    "projectListItem": [
+       {
+          "class": "Intro to ITWS",
+          "title": "Labs",
+          "page": "labs/labs.html"
+       },
+       {
+        "class": "Intro to ITWS",
+        "title": "Group Project",
+        "page": "../../grp/index.php"
+       }
+    ]
+ }
