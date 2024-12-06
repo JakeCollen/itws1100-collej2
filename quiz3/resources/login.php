@@ -50,14 +50,17 @@ include('quiz3/resources/doc.php');
 ?>
 
 <title>Jake's Website</title>
-
-<?php
-include('quiz3/resources/header2.php');
-?>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>   
+    <link href="../../resources/header.css" rel="stylesheet" type="text/css"/>
+    <link href="../../resources/login.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<ul class="header">
 Jake's Website
 <li><a href="index.php">Home</a></li>
 <li><a href="projects/projects.html">Projects</a></li>
+<li><a href="../../resources/header.css">stylesheet test</a></li>
 </ul>
 <div id="box">
     <form method="post">
