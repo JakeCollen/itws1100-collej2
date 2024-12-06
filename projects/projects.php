@@ -13,13 +13,13 @@
 
     <body>
         <?php
-            $dbOk = false;
-            @$db = new mysqli('localhost', 'phpmyadmin', 'JaysonTatum0$', 'mySite');
-            if ($db->connect_error) {
-                echo '<div class="messages">Database Connection Error: ';
-                echo $db->connect_errno . ' - ' . $db->connect_error . '</div>';
+            $connOk = false;
+            @$conn = new mysqli('localhost', 'phpmyadmin', 'JaysonTatum0$', 'mySite');
+            if ($conn->connect_error) {
+                echo '<div>Database Connection Error: ';
+                echo $conn->connect_errno . ' - ' . $conn->connect_error . '</div>';
             } else {
-                $dbOk = true;
+                $connOk = true;
             }
         ?>
         <ul class="header">
