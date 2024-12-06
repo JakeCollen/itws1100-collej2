@@ -28,7 +28,7 @@ Jake's Website
 <li><a href="index.php">Home</a></li>
 <li><a href="projects/projects.html">Projects</a></li>
 <li><a href="quiz3/resources/login.php"><?php echo $_SESSION['status'] ?></a></li>
-<li>Welcome, <?php echo $user_data['username']; ?></li>
+<li>Welcome, <?php echo $_SESSION['username']; ?></li>
 
 <?php
 include('quiz3/resources/resume.php');
