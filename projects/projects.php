@@ -13,13 +13,13 @@
 
     <body>
         <?php
-            $dbOk = false;
-            @$db = new mysqli('localhost', 'phpmyadmin', 'JaysonTatum0$', 'mySite');
-            if ($db->connect_error) {
+            $connOk = false;
+            @$conn = new mysqli('localhost', 'phpmyadmin', 'JaysonTatum0$', 'mySite');
+            if ($conn->connect_error) {
                 echo '<div class="messages">Database Connection Error: ';
-                echo $db->connect_errno . ' - ' . $db->connect_error . '</div>';
+                echo $conn->connect_errno . ' - ' . $conn->connect_error . '</div>';
             } else {
-                $dbOk = true;
+                $connOk = true;
             }
         ?>
         <ul class="header">
@@ -27,5 +27,26 @@
             <li><a href="../index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
         </ul>
+        <table>
+        <?php
+            if ($connOk) {
+                $query = 'select * from myProjects order by projectNumber';
+                $result = $conn->query($query);
+                $numRecords = $result->num_rows;
+                echo '<ul class="labs">';
+                for ($i = 0; $i < $numRecords; $i++) {
+                    $record = $result->fetch_assoc();
+                    echo '<li>';
+                    echo '<a href="' . ($record['projectLink']) . '">';
+                    echo htmlspecialchars($record['projectClass']) . '-' . htmlspecialchars($record['projectTitle'])
+                    echo '</a>'
+                    echo '</li>'
+                }
+                $result->free();
+                $conn->close();
+            }
+
+        ?>
+        </table>
     </body>
 </html>
