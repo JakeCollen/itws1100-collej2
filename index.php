@@ -1,14 +1,10 @@
-<?php
-include('quiz3/resources/connection.php');
-?>
-
-<?php
-include('quiz3/resources/functions.php');
-?>
-
-<?php
+<?php 
 session_start();
-    $user_data=check_login($conn);
+
+	include("quiz3/resources/connection.php");
+	include("quiz3/resources/functions.php");
+
+	$user_data = check_login($conn);
 
 ?>
 
