@@ -18,8 +18,7 @@ function check_login($conn)
 		}
 	}
 
-	//redirect to login
-	header("Location: login.php");
+	header("Location: quiz3/resources/login.php");
 	die;
 
 }
