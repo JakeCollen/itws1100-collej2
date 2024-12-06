@@ -6,6 +6,10 @@
 		$_SESSION['status'] = '<li><a href="../../quiz3/resources/login.php">Login</a></li>';
 		header('location: ../../quiz3/resources/login.php');
 	}
+    if (!isset($_SESSION['userType'])) {
+		$_SESSION['userType'] = '';
+	}
+
 ?>
 
 
