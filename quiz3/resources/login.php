@@ -32,6 +32,10 @@ session_start();
 						{
 							$_SESSION['userType'] = '<li><a href="editLabs.php">Add/Delete Labs</a></li>';
 						}
+						else
+						{
+							$_SESSION['userType'] = '';
+						}
 
 						$_SESSION['userId'] = $user_data['userId'];
 						$_SESSION['username'] = $user_data['username'];
