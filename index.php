@@ -10,7 +10,6 @@
 		unset($_SESSION['username']);
 		header("location: quiz3/resources/login.php");
 	}
-	echo 'third part';
 
 include("connection.php");
 ?>
@@ -25,10 +24,11 @@ include('quiz3/resources/doc.php');
 include('quiz3/resources/header.php');
 ?>
 
+<?php echo $user_data['status']; ?>
 Jake's Website
 <li><a href="index.php">Home</a></li>
 <li><a href="projects/projects.html">Projects</a></li>
-<li><a href="quiz3/resources/login.php"><?php echo $user_data['status']; ?></a></li>
+<li><a href="quiz3/resources/login.php">Login</a></li>
 
 <?php
 include('quiz3/resources/resume.php');
