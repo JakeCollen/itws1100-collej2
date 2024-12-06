@@ -1,7 +1,7 @@
 <?php
-            if ($dbOk) {
+            if ($connOk) {
                 $query = 'select * from myProjects order by projectNumber';
-                $result = $db->query($query);
+                $result = $conn->query($query);
                 $numRecords = $result->num_rows;
                 echo '<ul class="labs">';
                 for ($i = 0; $i < $numRecords; $i++) {
@@ -13,7 +13,7 @@
                     echo '</li>'
                 }
                 $result->free();
-                $db->close();
+                $conn->close();
             }
 
         ?>
