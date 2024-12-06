@@ -1,7 +1,7 @@
 <?php 
     session_start();
 	if (!isset($_SESSION['userId'])) {
-		$_SESSION['status'] = 'Login'
+		$_SESSION['status'] = 'Login';
 		header('location: quiz3/resources/login.php');
 	}
 	if (isset($_GET['logout'])) {
