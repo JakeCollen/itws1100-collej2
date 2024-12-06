@@ -20,6 +20,7 @@
                 echo $db->connect_errno . ' - ' . $db->connect_error . '</div>';
             } else {
                 $dbOk = true;
+                echo 'connection established'
             }
         ?>
         <ul class="header">
