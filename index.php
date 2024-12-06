@@ -4,14 +4,6 @@
 		$_SESSION['status'] = '<li><a href="quiz3/resources/login.php">Login</a></li>';
 		header('location: quiz3/resources/login.php');
 	}
-	if (isset($_GET['logout'])) {
-		echo 'logout';
-		session_destroy();
-		unset($_SESSION['username']);
-		header("location: quiz3/resources/login.php");
-	}
-
-include("connection.php");
 ?>
 
 <?php

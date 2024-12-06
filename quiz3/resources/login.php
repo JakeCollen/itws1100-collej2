@@ -28,6 +28,10 @@ session_start();
 					
 					if($user_data['password'] === $password)
 					{
+						if($user_data['userType'] === 'admin')
+						{
+							$_SESSION['userType'] = '<li><a href="editLabs.php">Add/Delete Labs</a></li>'
+						}
 
 						$_SESSION['userId'] = $user_data['userId'];
 						$_SESSION['username'] = $user_data['username'];
@@ -60,8 +64,8 @@ include('quiz3/resources/doc.php');
 <body>
 <ul class="header">
 Jake's Website
-<li><a href="index.php">Home</a></li>
-<li><a href="projects/projects.html">Projects</a></li>
+<li><a href="../../index.php">Home</a></li>
+<li><a href="../../projects/projects.html">Projects</a></li>
 <li><a href="login.php">Login</a></li>
 </ul>
 <div id="box">
