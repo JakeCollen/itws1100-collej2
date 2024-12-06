@@ -29,10 +29,15 @@ session_start();
                         header("Location: ../../index.php");
                         die;
                     }
+                    echo 'fifth issue';
                 }
+                echo 'fourth issue';
             }
+            echo 'third issue';
         }
+        echo 'second issue';
     }
+    echo 'first issue';
 ?>
 
 <?php
