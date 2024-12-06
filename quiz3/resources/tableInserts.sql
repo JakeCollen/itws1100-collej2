@@ -11,8 +11,8 @@ INSERT INTO `myLabs` (`labNumber`, `labTitle`, `labLink`) VALUES
 (10, "Moving to Production", "labs/lab10/lab10.html");
 
 INSERT INTO `myProjects` (`projectNumber`, `projectTitle`, `projectLink`) VALUES
-(1, "Intro to ITWS Labs", "labs/index.php"),
-(2, "Intro to ITWS Group Project", "../../grp/index.php");
+(1, "Labs", "labs/labs.php", "Intro to ITWS"),
+(2, "Group Project", "../../grp/index.php", "Intro to ITWS");
 
 INSERT INTO `myFooter` (`footerId`, `footerText`) VALUES
 (1, "Jake Collen-ITWS @ RPI");
