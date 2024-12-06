@@ -1,6 +1,7 @@
 <?php 
     session_start();
 	if (!isset($_SESSION['userId'])) {
+		$_SESSION['status'] = 'Login'
 		header('location: quiz3/resources/login.php');
 	}
 	if (isset($_GET['logout'])) {
@@ -27,6 +28,7 @@ Jake's Website
 <li><a href="index.php">Home</a></li>
 <li><a href="projects/projects.html">Projects</a></li>
 <li><a href="quiz3/resources/login.php"><?php echo $_SESSION['status'] ?></a></li>
+<li>Welcome, <?php echo $user_data['username']; ?></li>
 
 <?php
 include('quiz3/resources/resume.php');
