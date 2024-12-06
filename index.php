@@ -1,25 +1,15 @@
 <?php 
-session_start();
-
-	include("connection.php");
-	include("functions.php");
-	if(isset($_SESSION['userId']))
-	{
-
-		$id = $_SESSION['userId'];
-		$query = "select * from users where userId = '$id' limit 1";
-
-		$result = mysqli_query($conn,$query);
-		if($result && mysqli_num_rows($result) > 0)
-		{
-
-			$user_data = mysqli_fetch_assoc($result);
-			return $user_data;
-		}
+    session_start();
+	if (!isset($_SESSION['userId'])) {
+		$_SESSION['msg'] = "You must log in first";
+		header('location: quiz3/resources/login.php');
 	}
-
-	header("Location: quiz3/resources/login.php");
-	die;
+	if (isset($_GET['logout'])) {
+		session_destroy();
+		unset($_SESSION['username']);
+		header("location: quiz3/resources/login.php");
+	}
+	include("connection.php");
 ?>
 
 <?php
