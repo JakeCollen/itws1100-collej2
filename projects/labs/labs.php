@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 
+<?php 
+    session_start();
+	if (!isset($_SESSION['userId'])) {
+		$_SESSION['status'] = '<li><a href="../../quiz3/resources/login.php">Login</a></li>';
+		header('location: ../../quiz3/resources/login.php');
+	}
+?>
+
 
 <html lang="en">
     <head>
@@ -25,6 +33,8 @@
             Jake's Website
             <li><a href="../index.html">Home</a></li>
             <li><a href="../projects.html">Projects</a></li>
+            <?php echo $_SESSION['status'] ?>
+            <?php echo $_SESSION['userType'] ?>
         </ul>
         <?php
             if ($connOk) {
