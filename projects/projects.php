@@ -16,7 +16,7 @@
             $connOk = false;
             @$conn = new mysqli('localhost', 'phpmyadmin', 'JaysonTatum0$', 'mySite');
             if ($conn->connect_error) {
-                echo '<div class="messages">Database Connection Error: ';
+                echo '<div>Database Connection Error: ';
                 echo $conn->connect_errno . ' - ' . $conn->connect_error . '</div>';
             } else {
                 $connOk = true;
@@ -28,7 +28,5 @@
             <li><a href="../index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
         </ul>
-        <table>
-        </table>
     </body>
 </html>
