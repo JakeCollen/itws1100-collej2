@@ -30,6 +30,7 @@ session_start();
 					{
 
 						$_SESSION['userId'] = $user_data['userId'];
+						$user_data['status'] = 'Logout';
 						header("Location: ../../index.php");
 						die;
 					}
