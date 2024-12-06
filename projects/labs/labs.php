@@ -9,7 +9,6 @@
     if (!isset($_SESSION['userType'])) {
 		$_SESSION['userType'] = '';
 	}
-
 ?>
 
 
