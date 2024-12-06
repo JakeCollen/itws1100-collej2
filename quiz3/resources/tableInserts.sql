@@ -10,14 +10,15 @@ INSERT INTO `myLabs` (`labNumber`, `labTitle`, `labLink`) VALUES
 (9, "PHP and MySql", "labs/lab09/lab09.html"),
 (10, "Moving to Production", "labs/lab10/lab10.html");
 
-INSERT INTO `myProjects` (`projectNumber`, `projectTitle`, `projectLink`) VALUES
+INSERT INTO `myProjects` (`projectNumber`, `projectTitle`, `projectLink`, `projectClass`) VALUES
 (1, "Labs", "labs/labs.php", "Intro to ITWS"),
 (2, "Group Project", "../../grp/index.php", "Intro to ITWS");
 
 INSERT INTO `myFooter` (`footerId`, `footerText`) VALUES
 (1, "Jake Collen-ITWS @ RPI");
 
-INSERT INTO `mySiteUsers` (`userId`, `username`, `password`) VALUES
-(1, "collej2", "JaysonTatum0$"),
-(2, "rplotka", "JakeServer"),
-(3, "mojiso", "JakeServer");
+INSERT INTO `mySiteUsers` (`userId`, `username`, `password`, `userType`) VALUES
+(1, "collej2", "JaysonTatum0$", `admin`),
+(2, "rplotka", "JakeServer", `admin`),
+(3, "mojiso", "JakeServer", `admin`);
+(4, "testuser", "testpass", `user`)
