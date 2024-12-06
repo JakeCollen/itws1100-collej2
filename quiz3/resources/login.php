@@ -30,7 +30,7 @@ session_start();
 					{
 						if($user_data['userType'] === 'admin')
 						{
-							$_SESSION['userType'] = '<li><a href="editLabs.php">Add/Delete Labs</a></li>'
+							$_SESSION['userType'] = '<li><a href="editLabs.php">Add/Delete Labs</a></li>';
 						}
 
 						$_SESSION['userId'] = $user_data['userId'];
