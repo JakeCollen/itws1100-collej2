@@ -1,8 +1,7 @@
 <?php 
     session_start();
 	if (!isset($_SESSION['userId'])) {
-		echo 'not logged in';
-		$_SESSION['msg'] = "You must log in first";
+		$user_data['status'] = 'login';
 		header('location: quiz3/resources/login.php');
 	}
 	if (isset($_GET['logout'])) {
@@ -29,7 +28,7 @@ include('quiz3/resources/header.php');
 Jake's Website
 <li><a href="index.php">Home</a></li>
 <li><a href="projects/projects.html">Projects</a></li>
-<li><a href="quiz3/resources/login.php">Login</a></li>
+<li><a href="quiz3/resources/login.php"><?php echo $user_data['status']; ?></a></li>
 
 <?php
 include('quiz3/resources/resume.php');
