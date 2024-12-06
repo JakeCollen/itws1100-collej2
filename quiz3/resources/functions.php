@@ -13,7 +13,7 @@ function check_login($conn)
         }
     }
 
-    header("Location: login.php");
+    header("Location: quiz3/resources/login.php");
     die;
 }
 ?>
