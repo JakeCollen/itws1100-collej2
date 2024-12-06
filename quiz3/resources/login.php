@@ -31,7 +31,7 @@ session_start();
 
 						$_SESSION['userId'] = $user_data['userId'];
 						$_SESSION['username'] = $user_data['username'];
-						$_SESSION['status'] = 'Logout';
+						$_SESSION['status'] = '<li><a href="quiz3/resources/logout.php">Logout</a></li>';
 						header("Location: ../../index.php");
 						die;
 					}
