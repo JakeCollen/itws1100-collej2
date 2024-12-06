@@ -24,7 +24,7 @@ include('quiz3/resources/doc.php');
 include('quiz3/resources/header.php');
 ?>
 
-<?php echo $user_data['status']; ?>
+<?php echo $_SESSION['userId'] ?>
 Jake's Website
 <li><a href="index.php">Home</a></li>
 <li><a href="projects/projects.html">Projects</a></li>
