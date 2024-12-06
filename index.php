@@ -1,17 +1,17 @@
 <?php 
     session_start();
 	if (!isset($_SESSION['userId'])) {
-		echo 'not logged in'
+		echo 'not logged in';
 		$_SESSION['msg'] = "You must log in first";
 		header('location: quiz3/resources/login.php');
 	}
 	if (isset($_GET['logout'])) {
-		echo 'logout'
+		echo 'logout';
 		session_destroy();
 		unset($_SESSION['username']);
 		header("location: quiz3/resources/login.php");
 	}
-	echo 'third part'
+	echo 'third part';
 
 include("connection.php");
 ?>
