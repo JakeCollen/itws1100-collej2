@@ -40,6 +40,7 @@
                     echo htmlspecialchars($record['projectClass']) . '-' . htmlspecialchars($record['projectTitle']);
                     echo '</a>';
                     echo '</li>';
+                echo '</ul>';
                 }
                 $result->free();
                 $conn->close();

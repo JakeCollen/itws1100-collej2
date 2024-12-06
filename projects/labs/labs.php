@@ -39,6 +39,7 @@
                     echo 'Lab' . htmlspecialchars($record['labNumber']) . '-' . htmlspecialchars($record['labTitle']);
                     echo '</a>';
                     echo '</li>';
+                echo '</ul>';
                 }
                 $result->free();
                 $conn->close();
