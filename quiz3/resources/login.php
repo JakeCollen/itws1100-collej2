@@ -52,7 +52,7 @@ include('quiz3/resources/doc.php');
 <title>Jake's Website</title>
 
 <?php
-include('quiz3/resources/header.php');
+include('quiz3/resources/header2.php');
 ?>
 
 Jake's Website
