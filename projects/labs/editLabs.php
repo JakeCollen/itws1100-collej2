@@ -107,7 +107,7 @@
          <div class="value"><input type="text" size="60" value="<?php if ($havePost && $errors != '') {
                                                                      echo $labLink;
                                                                   } ?>" name="labLink" id="labLink" /></div>
-         <input type="submit" value="save" id="save" name="Submit" />
+         <input type="submit" value="save" id="save" name="save" />
       </div>
    </fieldset>
 </form>
