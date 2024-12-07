@@ -64,6 +64,8 @@
                 $statement->close();
             }
         }
+    } else {
+        echo 'no post';
     }
 ?>
 <ul class="header">
