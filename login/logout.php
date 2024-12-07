@@ -13,3 +13,4 @@ if(isset(_$SESSION['userType']))
 
 header("Location: login.php");
 die;
+?>
