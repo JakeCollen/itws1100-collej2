@@ -57,6 +57,7 @@
             if ($connOk) {
                 echo 'have conn';
                 $insQuery = "insert into myLabs (`labTitle`, `labLink`) values(?,?)";
+                $statement = $db->prepare($insQuery);
                 $statement->bind_param("ss", $labTitle, $labLink);
                 $statement->execute();
                 echo '<div class="messages"><h4>Success: ' . $statement->affected_rows . ' lab added to database.</h4>';
