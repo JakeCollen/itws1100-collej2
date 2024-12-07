@@ -55,7 +55,7 @@ session_start();
 ?>
 
 <?php
-include('quiz3/resources/doc.php');
+include('../resources/doc.php');
 ?>
 
 <title>Jake's Website</title>

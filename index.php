@@ -2,7 +2,7 @@
     session_start();
 	if (!isset($_SESSION['userId'])) {
 		$_SESSION['status'] = '<li><a href="quiz3/resources/login.php">Login</a></li>';
-		header('location: quiz3/resources/login.php');
+		header('location: login/login.php');
 	}
 ?>
 
