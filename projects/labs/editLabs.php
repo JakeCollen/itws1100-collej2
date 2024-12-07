@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 
+<?php 
+    session_start();
+	if (!isset($_SESSION['userId'])) {
+		$_SESSION['status'] = '<li><a href="../../quiz3/resources/login.php">Login</a></li>';
+		header('location: ../../quiz3/resources/login.php');
+	}
+    if (!isset($_SESSION['userType'])) {
+		$_SESSION['userType'] = '';
+	}
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,6 +27,39 @@
         echo $conn->connect_errno . ' - ' . $conn->connect_error . '</div>';
     } else {
         $connOk = true;
+    
+    }
+
+    $havePost = isset($_POST["save"]);
+    $errors = '';
+    if ($havePost) {
+        $labTitle = htmlspecialchars(trim($_POST["labTitle"]));
+        $labLink = htmlspecialchars(trim($_POST["labLink"]));
+
+        if ($labTitle == '') {
+            $errors .= '<li>Lab title cannot be blank</li>';
+        }
+        if ($labLink == '') {
+            $errors .= '<li>Lab Link cannot be blank</li>';
+        }
+
+        if ($errors != '') {
+            echo '<div class="messages"><h4>Please correct the following errors:</h4><ul>';
+            echo $errors;
+            echo '</ul></div>';
+            echo '<script type="text/javascript">';
+            echo '  $(document).ready(function() {';
+            echo '    $("' . $focusId . '").focus();';
+            echo '  });';
+            echo '</script>';
+        } else {
+            if ($connOk) {
+                $insQuery = "insert into myLabs (`labTitle`, `labLink`) values(?,?)";
+                $statement->bind_param("ss", $labTitle, $labLink);
+                $statement->execute();
+                $statement->close();
+            }
+        }
     }
 ?>
 <ul class="header">
@@ -44,5 +88,22 @@
     }
 ?>
 </ul>
+<form id="addForm" name="addForm" action="editLabs.php" method="post" onsubmit="return validate(this);">
+   <fieldset>
+      <div class="formData">
+
+         <label class="field" for="labTitle">Lab Title:</label>
+         <div class="value"><input type="text" size="60" value="<?php if ($havePost && $errors != '') {
+                                                                     echo $labTitle;
+                                                                  } ?>" name="labTitle" id="labTitle" /></div>
+
+         <label class="field" for="labLink">Lab Link:</label>
+         <div class="value"><input type="text" size="60" value="<?php if ($havePost && $errors != '') {
+                                                                     echo $labLink;
+                                                                  } ?>" name="labLink" id="labLink" /></div>
+         <input type="submit" value="save" id="save" name="Submit" />
+      </div>
+   </fieldset>
+</form>
 </body>
 </html>
