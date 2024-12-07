@@ -67,8 +67,8 @@ include('quiz3/resources/doc.php');
 <body>
 <ul class="header">
 Jake's Website
-<li><a href="../../index.php">Home</a></li>
-<li><a href="../../projects/projects.html">Projects</a></li>
+<li><a href="../index.php">Home</a></li>
+<li><a href="../projects/projects.html">Projects</a></li>
 <li><a href="login.php">Login</a></li>
 </ul>
 <div id="box">
@@ -82,5 +82,5 @@ Jake's Website
 
 
 <?php
-include('quiz/resources/closing.php');
+include('../resources/closing.php');
 ?>
