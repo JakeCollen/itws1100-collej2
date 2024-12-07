@@ -68,7 +68,7 @@ include('../resources/doc.php');
 <ul class="header">
 Jake's Website
 <li><a href="../index.php">Home</a></li>
-<li><a href="../projects/projects.html">Projects</a></li>
+<li><a href="../projects/projects.php">Projects</a></li>
 <li><a href="login.php">Login</a></li>
 </ul>
 <div id="box">

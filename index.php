@@ -18,7 +18,7 @@ include('resources/header.php');
 
 Jake's Website
 <li><a href="index.php">Home</a></li>
-<li><a href="projects/projects.html">Projects</a></li>
+<li><a href="projects/projects.php">Projects</a></li>
 <?php echo $_SESSION['status'] ?>
 <li>Welcome, <?php echo $_SESSION['username']; ?></li>
 
