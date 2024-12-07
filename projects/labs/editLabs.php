@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Projects Home Page</title>
+    <link href="../../resources/header.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
 <?php
     $dbOk = false;
     @$db = new mysqli('localhost', 'phpmyadmin', 'JaysonTatum0$', 'mySite');
@@ -7,24 +17,14 @@
     } else {
         $dbOk = true;
     }
-        ?>
-
-<?php
-include('quiz3/resources/doc.php');
 ?>
-
-<title>Jake's Website</title>
-
-<?php
-include('quiz3/resources/header2.php');
-?>
-
-Jake's Website
-<li><a href="index.php">Home</a></li>
-<li><a href="projects/projects.html">Projects</a></li>
-<?php echo $_SESSION['status'] ?>
-<li>Welcome, <?php echo $_SESSION['username']; ?></li>
-
+<ul class="header">
+    Jake's Website
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../projects.html">Projects</a></li>
+    <?php echo $_SESSION['status'] ?>
+    <?php echo $_SESSION['userType'] ?>
+</ul>
 <?php
     if ($connOk) {
         $query = 'select * from myLabs order by labNumber';
@@ -45,7 +45,5 @@ Jake's Website
     }
 
 ?>
-
-<?php
-include('quiz/resources/closing.php');
-?>
+</body>
+</html>

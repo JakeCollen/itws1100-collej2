@@ -18,7 +18,6 @@
         <title>My Projects Home Page</title>
         <link href="../../resources/header.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script type="text/javascript" src="../../resources/labs_list.js"></script>
     </head>
 
     <body>
