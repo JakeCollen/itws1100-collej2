@@ -33,7 +33,6 @@
     $havePost = isset($_POST["save"]);
     $errors = '';
     if ($havePost) {
-        echo 'have post';
         $labTitle = htmlspecialchars(trim($_POST["labTitle"]));
         $labLink = htmlspecialchars(trim($_POST["labLink"]));
 
@@ -55,9 +54,6 @@
             echo '</script>';
         } else {
             if ($connOk) {
-                echo 'have conn';
-                echo $labTitle;
-                echo $labLink;
                 $insQuery = "insert into myLabs (`labTitle`, `labLink`) values(?,?)";
                 $statement = $conn->prepare($insQuery);
                 $statement->bind_param("ss", $labTitle, $labLink);
@@ -68,7 +64,6 @@
             }
         }
     } else {
-        echo 'no post';
     }
 ?>
 <ul class="header">
@@ -97,6 +92,7 @@
     }
 ?>
 </ul>
+<h3>Add lab</h3>
 <form id="addForm" name="addForm" action="editLabs.php" method="post" onsubmit="return validate(this);">
    <fieldset>
       <div class="formData">
