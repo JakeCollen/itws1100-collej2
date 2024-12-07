@@ -7,7 +7,6 @@
         <title>My Projects Home Page</title>
         <link href="../resources/header.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script type="text/javascript" src="../resources/projects_list.js"></script>
     </head>
 
 
@@ -27,12 +26,13 @@
             <li><a href="../index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
         </ul>
+        
         <?php
+            echo '<ul class="labs">';
             if ($connOk) {
                 $query = 'select * from myProjects order by projectNumber';
                 $result = $conn->query($query);
                 $numRecords = $result->num_rows;
-                echo '<ul class="labs">';
                 for ($i = 0; $i < $numRecords; $i++) {
                     $record = $result->fetch_assoc();
                     echo '<li>';
@@ -40,12 +40,11 @@
                     echo htmlspecialchars($record['projectClass']) . '-' . htmlspecialchars($record['projectTitle']);
                     echo '</a>';
                     echo '</li>';
-                echo '</ul>';
                 }
                 $result->free();
                 $conn->close();
             }
-
+            echo '</ul>';
         ?>
     </body>
 </html>
