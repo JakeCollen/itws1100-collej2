@@ -38,12 +38,12 @@
             <?php echo $_SESSION['status'] ?>
             <?php echo $_SESSION['userType'] ?>
         </ul>
+        <ul class="labs">
         <?php
             if ($connOk) {
                 $query = 'select * from myLabs order by labNumber';
                 $result = $conn->query($query);
                 $numRecords = $result->num_rows;
-                echo '<ul class="labs">';
                 for ($i = 0; $i < $numRecords; $i++) {
                     $record = $result->fetch_assoc();
                     echo '<li>';
@@ -51,12 +51,11 @@
                     echo 'Lab' . htmlspecialchars($record['labNumber']) . '-' . htmlspecialchars($record['labTitle']);
                     echo '</a>';
                     echo '</li>';
-                echo '</ul>';
                 }
                 $result->free();
                 $conn->close();
             }
-
         ?>
+        </ul>
     </body>
 </html>
