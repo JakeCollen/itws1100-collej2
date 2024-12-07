@@ -33,6 +33,7 @@
     $havePost = isset($_POST["save"]);
     $errors = '';
     if ($havePost) {
+        echo 'have post';
         $labTitle = htmlspecialchars(trim($_POST["labTitle"]));
         $labLink = htmlspecialchars(trim($_POST["labLink"]));
 
@@ -54,6 +55,7 @@
             echo '</script>';
         } else {
             if ($connOk) {
+                echo 'have conn';
                 $insQuery = "insert into myLabs (`labTitle`, `labLink`) values(?,?)";
                 $statement->bind_param("ss", $labTitle, $labLink);
                 $statement->execute();
