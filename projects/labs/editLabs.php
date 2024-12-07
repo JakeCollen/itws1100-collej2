@@ -56,6 +56,8 @@
         } else {
             if ($connOk) {
                 echo 'have conn';
+                echo $labTitle;
+                echo $labLink;
                 $insQuery = "insert into myLabs (`labTitle`, `labLink`) values(?,?)";
                 $statement = $db->prepare($insQuery);
                 $statement->bind_param("ss", $labTitle, $labLink);
